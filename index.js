@@ -22,7 +22,7 @@ let session = `./${setting.sessionName}.json`
 const { state, saveState } = useSingleFileAuthState(session)
 
 function title() {
-	clear()
+	console.clear()
 	console.log(chalk.bold.green(figlet.textSync('Wabot MD', {
 		font: 'Ghost',
 		horizontalLayout: 'default',
