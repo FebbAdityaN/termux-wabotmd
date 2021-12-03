@@ -88,7 +88,7 @@ const connectToWhatsApp = async () => {
 		const { connection, lastDisconnect } = update
 		if (connection === 'close') {
 			status.stop()
-			reconnect.stoo()
+			reconnect.stop()
 			starting.stop()
 			console.log(mylog('Server Ready ✓'))
 			lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut 
