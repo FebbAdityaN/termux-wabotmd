@@ -104,7 +104,7 @@ module.exports = async(client, msg, m, setting) => {
 				break
 			case prefix+'owner':
 				for (let x of ownerNumber) {
-					sendContact(from, x.split('@s.whatsapp.net')[0], 'Owner of - ' + botNumber, msg)
+					sendContact(from, x.split('@s.whatsapp.net')[0], '.', msg)
 				}
 				break
 			case prefix+'menu':
