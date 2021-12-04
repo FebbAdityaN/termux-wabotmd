@@ -103,7 +103,7 @@ module.exports = async(client, msg, m, setting) => {
 				break
 			case prefix+'donate':
 			case prefix+'donasi':
-				reply(`──「 MENU DONATE 」──\n\nHi ${pushname} 👋🏻\n\`\`\`GOPAY/DANA : 085770269605 (Customer)\`\`\`\n\`\`\`PULSA : 0895382331666 (Tri/3)\`\`\`\nTerimakasih untuk kamu yang sudah donasi untuk perkembangan bot ini _^\n──「 THX FOR YOU ! 」──`)
+				reply(`──「 MENU DONATE 」──\n\nHi ${pushname} 👋🏻\n\`\`\`GOPAY/DANA : 085770269605\`\`\`\n\`\`\`PULSA : 0895382331666 (Tri/3)\`\`\`\nTerimakasih untuk kamu yang sudah donasi untuk perkembangan bot ini _^\n──「 THX FOR YOU ! 」──`)
 				break
 			case prefix+'owner':
 				for (let x of ownerNumber) {
