@@ -73,9 +73,9 @@ module.exports = async(client, msg, m, setting) => {
 			return client.sendMessage(from, { contacts: { displayName: name, contacts: [{ vcard }] }, mentions : mek ? mek : []},{ quoted: quoted })
 		}
 		
-		const buttonsDefault = [
-			{ callButton: {displayText: `Call Owner`, phoneNumber: `+6285770269605`} },
-            { urlButton: { displayText: `Script Bot`, url : `https://github.com/FebbAdityaN/termux-wabotmd`} },
+		const templateButtons = [
+			{ callButton: {displayText: `Owner Number`, phoneNumber: `+6285770269605`} },
+            { urlButton: { displayText: `Star & Fork in Github!`, url : `https://github.com/FebbAdityaN/termux-wabotmd`} },
             { quickReplyButton: { displayText: `🧑 Owner`, id: `${prefix}owner` } },
             { quickReplyButton: { displayText: `💰 Donasi`, id: `${prefix}donate` } },
             { quickReplyButton: { displayText: `🧬 Test Respon Bot`, id: `${prefix}test` } }
@@ -116,7 +116,7 @@ module.exports = async(client, msg, m, setting) => {
 				break
 			case prefix+'menu':
 			case prefix+'help':
-				buttonWithText(from, `Heyyyoooo *${pushname}* 🐨\n\nBot ini masih tahap uji coba, tunggu beberapa hari kedepan ya _^`, `WhatsApp Bot © 2020`, buttonsDefault)
+				buttonWithText(from, `Heyyyoooo *${pushname}* 🐨\n\nBot ini masih tahap uji coba, tunggu beberapa hari kedepan ya _^`, `WhatsApp Bot © 2020`, templateButtons)
 				break
 			default:
 			if (!isGroup && isCmd) {
