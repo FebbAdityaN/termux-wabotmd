@@ -79,7 +79,7 @@ module.exports = async(client, msg, m, setting) => {
 			exif.create(packname, author, sender.split("0")[0])
 			exec(`webpmux -set exif ./temp/${sender.split("0")[0]}.exif ./${media} -o ./${ran}`, (err, stderr, stdout) => {
 				if (err) return reply(String(err))
-				client.sendMessage(from, { sticker: { fs.readFileSync(ran) }, { quoted: msg }).then(v => fs.unlinkSync(ran))
+				client.sendMessage(from, { sticker: { `${fs.readFileSync(ran)}` }, { quoted: msg }).then(v => fs.unlinkSync(ran))
 			})
 		}
 		
